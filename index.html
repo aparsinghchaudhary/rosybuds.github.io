@@ -1,8 +1,77 @@
-<html>
-  <title>rosy</title>
-  <head>
-    <body>
-      <h1>rooneek</h1>
-    </body>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+        <figure>
+            <img src="../logo.svg">
+            
+        </figure>
+    </header>
+    <main>
+        <div class="banner">
+
+           
+
+<style>
+  .container {
+    --uib-size: 55px;
+    --uib-color: rgb(255, 255, 255);
+    --uib-speed: 1.3s;
+    --uib-bg-opacity: .1;
+    height: calc(var(--uib-size) * (2.1 / 5));
+    width: var(--uib-size);
+    transform-origin: center;
+    overflow: visible;
+  }
+
+  .car {
+    fill: none;
+    stroke: var(--uib-color);
+    stroke-dasharray: 15, 85;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: travel var(--uib-speed) linear infinite;
+    will-change: stroke-dasharray, stroke-dashoffset;
+    transition: stroke 0.5s ease;
+  }
+
+  .track {
+    stroke: var(--uib-color);
+    opacity: var(--uib-bg-opacity);
+  }
+
+  @keyframes travel {
+    0% {
+      stroke-dashoffset: 0;
+    }
+
+    100% {
+      stroke-dashoffset: 100;
+    }
+  }
+</style>
+
+            <div>
+                <h1 class="left"></h1>
+
+            </div>
+            
+            <button>
+              ENTERIN 
+            </button>
+
+            <canvas id="dotsCanvas"></canvas>
+        </div>
+    </main>    
+
+
+    <script src="app.js"></script>
+</body>
 </html>
